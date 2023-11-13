@@ -1,202 +1,201 @@
-body{
-    margin: 0;
-    padding: 0;
-    background: #efefef;
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+
+@media only screen and (max-width: 390px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background: #efefef;
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #bottomNavigation{
+        display: grid;
+        position: fixed;
+        width: 100%;
+        height: 65.17px;
+        background: #fefefe;
+        bottom: 0;
+        grid-template-columns: repeat(9,46px);
+        align-items: center;
+    }
+    
+    #bottomNavigation #home{
+        position: relative;
+        color: white;
+        background: #ec256e;
+        display: block;
+        height: 46px;
+        width: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        border-radius: 100%;
+        grid-column: 5;
+        transition: 0.3s;
+    }
+    
+    #bottomNavigation #book{
+        position: absolute;
+        color: white;
+        background: transparent;
+        color: #d4d5d9;
+        display: block;
+        height: 46px;
+        width: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        border-radius: 100%;
+        grid-column: 3;
+        transition: 0.3s;
+    }
+    
+    #bottomNavigation #homework{
+        position: absolute;
+        color: white;
+        background: transparent;
+        color: #d4d5d9;
+        display: block;
+        height: 46px;
+        width: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        border-radius: 100%;
+        grid-column: 7;
+        transition: 0.3s;
+    }
+    
+    #homeworkContainer{
+        display: grid;
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        background: rgba(0, 0, 0, 0);
+        bottom: 6%;
+        align-items: center;
+        grid-template-columns: repeat(3, 150px);
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+    
+    #homeworkContainer #bg1{
+        position: relative;
+        height: 60%;
+        width: 138px;
+        background: var(--clr);
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #homeworkContainer #bg2{
+        position: relative;
+        height: 60%;
+        width: 138px;
+        background: var(--clr);
+        margin-left: 20px;
+        border-radius: 10px;
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #homeworkContainer #bg3{
+        position: relative;
+        height: 60%;
+        width: 138px;
+        background: var(--clr);
+        margin-left: 20px;
+        border-radius: 10px;
+        grid-column: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #homeworkContainer #bg4{
+        position: relative;
+        height: 60%;
+        width: 138px;
+        background: var(--clr);
+        margin-left: 20px;
+        border-radius: 10px;
+        grid-column: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #homeworkContainer #bg1 img{
+        height: 90%;
+        width: 90%;
+        border-radius: 5px;
+    }
+    
+    #homeworkContainer #bg2 img{
+        height: 90%;
+        width: 90%;
+        border-radius: 5px;
+    }
+    
+    #homeworkContainer #bg3 img{
+        height: 90%;
+        width: 90%;
+        border-radius: 5px;
+    }
+    
+    #homeworkContainer #bg4 img{
+        height: 90%;
+        width: 90%;
+        border-radius: 5px;
+    }
+    
+    #homeworkContainer #bg1 span,#homeworkContainer #bg2 span,#homeworkContainer #bg3 span,#homeworkContainer #bg4 span{
+        text-align: center;
+        width: 100%;
+        height: 20px;
+        display: block;
+        background: transparent;
+        color: #3498db;
+        position: absolute;
+        top: 105%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #PopularBooks{
+        position: fixed;
+        bottom: 35%;
+        font-weight: bold;
+        left: 5%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    
+    #SeeAll{
+        height: 20px;
+        width: 60px;
+        display: block;
+        position: fixed;
+        color: #03bcf4;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        left: 82%;
+        bottom: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-
-#bottomNavigation{
-    display: grid;
-    position: fixed;
-    width: 100%;
-    height: 65.17px;
-    background: #fefefe;
-    bottom: 0;
-    grid-template-columns: repeat(9,46px);
-    align-items: center;
-}
-
-#bottomNavigation #home{
-    position: relative;
-    color: white;
-    background: #ec256e;
-    display: block;
-    height: 46px;
-    width: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    border-radius: 100%;
-    grid-column: 5;
-    transition: 0.3s;
-}
-
-#bottomNavigation #book{
-    position: absolute;
-    color: white;
-    background: transparent;
-    color: #d4d5d9;
-    display: block;
-    height: 46px;
-    width: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    border-radius: 100%;
-    grid-column: 3;
-    transition: 0.3s;
-}
-
-#bottomNavigation #homework{
-    position: absolute;
-    color: white;
-    background: transparent;
-    color: #d4d5d9;
-    display: block;
-    height: 46px;
-    width: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    border-radius: 100%;
-    grid-column: 7;
-    transition: 0.3s;
-}
-
-#homeworkContainer{
-    display: grid;
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    background: rgba(0, 0, 0, 0);
-    bottom: 6%;
-    align-items: center;
-    grid-template-columns: repeat(3, 150px);
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    margin-left: 10px;
-    margin-right: 25px;
-}
-
-#homeworkContainer #bg1{
-    position: relative;
-    height: 60%;
-    width: 138px;
-    background: var(--clr);
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    grid-column: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#homeworkContainer #bg2{
-    position: relative;
-    height: 60%;
-    width: 138px;
-    background: var(--clr);
-    margin-left: 20px;
-    border-radius: 10px;
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#homeworkContainer #bg3{
-    position: relative;
-    height: 60%;
-    width: 138px;
-    background: var(--clr);
-    margin-left: 20px;
-    border-radius: 10px;
-    grid-column: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#homeworkContainer #bg4{
-    position: relative;
-    height: 60%;
-    width: 138px;
-    background: var(--clr);
-    margin-left: 20px;
-    border-radius: 10px;
-    grid-column: 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#homeworkContainer #bg1 img{
-    height: 90%;
-    width: 90%;
-    border-radius: 5px;
-}
-
-#homeworkContainer #bg2 img{
-    height: 90%;
-    width: 90%;
-    border-radius: 5px;
-}
-
-#homeworkContainer #bg3 img{
-    height: 90%;
-    width: 90%;
-    border-radius: 5px;
-}
-
-#homeworkContainer #bg4 img{
-    height: 90%;
-    width: 90%;
-    border-radius: 5px;
-}
-
-#homeworkContainer #bg1 span,#homeworkContainer #bg2 span,#homeworkContainer #bg3 span,#homeworkContainer #bg4 span{
-    text-align: center;
-    width: 100%;
-    height: 20px;
-    display: block;
-    background: transparent;
-    color: #3498db;
-    position: absolute;
-    top: 105%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#PopularBooks{
-    position: fixed;
-    bottom: 35%;
-    font-weight: bold;
-    left: 5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-#SeeAll{
-    height: 20px;
-    width: 60px;
-    display: block;
-    position: absolute;
-    color: #03bcf4;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    left: 82%;
-    bottom: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
