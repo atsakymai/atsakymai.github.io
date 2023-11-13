@@ -10,7 +10,7 @@ body{
 
 #bottomNavigation{
     display: grid;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 65.17px;
     background: #fefefe;
