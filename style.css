@@ -77,7 +77,7 @@ body{
     background: rgba(0, 0, 0, 0);
     bottom: 6%;
     align-items: center;
-    grid-template-columns: repeat(3,150px);
+    grid-template-columns: repeat(3, 150px);
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     margin-left: 10px;
@@ -182,14 +182,21 @@ body{
 }
 
 
-#SeeAllBooks{
-    position: fixed;
-    color: #ec256e;
-    bottom: 35%;
-    left: 80%;
+#SeeAll{
+    height: 20px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    color: #03bcf4;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 82%;
+    bottom: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 
