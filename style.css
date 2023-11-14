@@ -207,7 +207,7 @@
         background: transparent;
         bottom: 45%;
         align-items: center;
-        grid-template-columns: repeat(3, 234px);
+        grid-template-columns: repeat(3, 210px);
         overflow-x: scroll;
         scrollbar-color: red transparent; 
         scrollbar-width: 50px;
