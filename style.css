@@ -191,7 +191,7 @@
         color: #03bcf4;
         font-weight: bold;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        left: 82%;
+        left: 83%;
         bottom: 45%;
         display: flex;
         justify-content: center;
@@ -202,37 +202,43 @@
     #topSlider {
         display: grid;
         position: fixed;
-        width: 100%;
+        width: 94%;
         height: 265px;
         background: transparent;
         bottom: 45%;
         align-items: center;
         grid-template-columns: repeat(3, 234px);
         overflow-x: scroll;
-        padding-left: 10px;
         scrollbar-color: red transparent; 
-        scrollbar-width: thin; 
-    
-        &::-webkit-scrollbar {
-            background-color: transparent; 
-        }
-    
-        &::-webkit-scrollbar-thumb {
-            background-color: transparent; 
-        }
-    
-        &::-webkit-scrollbar-track {
-            background-color: transparent;
-        }
+        scrollbar-width: 50px;
+        background: transparent;
+        left: 4%;
     }
     
+    #topSlider.show-scrollbar{
+        background-color: red;
+        scrollbar-width: 12px;
+    }
+
+    #topSlider::-webkit-scrollbar {
+        scrollbar-width: 12px;
+        background: gray;
+    }
+
+    #topSlider::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 6px;
+    }
+
+    #topSlider::-webkit-scrollbar-track {
+        background-color: #eee; /* Color of the track */
+    }
 
     #topSlider #bg1{
         position: relative;
         height: 60%;
         width: 180px;
         background: orange;
-        margin-left: 10px;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         bottom: 10%;
