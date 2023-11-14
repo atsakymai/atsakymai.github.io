@@ -214,25 +214,6 @@
         background: transparent;
         left: 4%;
     }
-    
-    #topSlider.show-scrollbar{
-        background-color: red;
-        scrollbar-width: 12px;
-    }
-
-    #topSlider::-webkit-scrollbar {
-        scrollbar-width: 12px;
-        background: gray;
-    }
-
-    #topSlider::-webkit-scrollbar-thumb {
-        background-color: #888;
-        border-radius: 6px;
-    }
-
-    #topSlider::-webkit-scrollbar-track {
-        background-color: #eee; /* Color of the track */
-    }
 
     #topSlider #bg1{
         position: relative;
@@ -293,5 +274,34 @@
         background: teal;
         bottom: -35px;
         border-bottom-left-radius: 10px;
+    }
+
+    #chooseGenre{
+        position: fixed;
+        height: 40px;
+        width: 305px;
+        display: block;
+        background: rgba(218, 77, 77, 1); 
+        top: 50%;
+        left: 4%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    #chooseGenre #div1,#chooseGenre #div2{
+        height: 60%;
+        width: 20%;
+        background: #FF6F61;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+    #chooseGenre #div3,#chooseGenre #div4{
+        height: 60%;
+        width: 20%;
+        background: #fa3e2d;
+        margin-left: 10px;
+        border-radius: 5px;
     }
 }
