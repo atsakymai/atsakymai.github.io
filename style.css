@@ -250,7 +250,7 @@
         position: relative;
         height: 60%;
         width: 180px;
-        background: #00CED1;
+        background: #FF8243;
         margin-left: 20px;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
@@ -262,7 +262,7 @@
         position: absolute;
         height: 20%;
         width: 100%;
-        background: #FFD700;
+        background: #BA9D98;
         bottom: -35px;
         border-bottom-left-radius: 10px;
     }
