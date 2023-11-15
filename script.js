@@ -8,6 +8,7 @@ const div1 = document.getElementById("div1");
 const div2 = document.getElementById("div2");
 
 
+let choice = "";
 
 
 bookButton.onclick = function(){
@@ -37,10 +38,14 @@ learnButton.onclick = function(){
     learnButton.style.color = "#fff";
 }
 
-div2.onclick = function(){
-    background.style.left = "70px";
-}
-
 div1.onclick = function(){
     background.style.left = "0px";
+    choice = "All";
+    console.log(choice);
+}
+
+div2.onclick = function(){
+    background.style.left = "70px";
+    choice = "Div";
+    console.log(choice);
 }
