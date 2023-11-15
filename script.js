@@ -3,6 +3,10 @@ const homeButton = document.getElementById("home");
 const learnButton = document.getElementById("learn");
 const Slider = document.getElementById("Slider");
 const SeeAll = document.getElementById("SeeAll")
+const background = document.getElementById("background");
+const div1 = document.getElementById("div1");
+const div2 = document.getElementById("div2");
+
 
 
 
@@ -31,4 +35,12 @@ learnButton.onclick = function(){
     homeButton.style.color = "#d4d5d9";
     learnButton.style.background = "#ec256e";
     learnButton.style.color = "#fff";
+}
+
+div2.onclick = function(){
+    background.style.left = "70px";
+}
+
+div1.onclick = function(){
+    background.style.left = "0px";
 }
